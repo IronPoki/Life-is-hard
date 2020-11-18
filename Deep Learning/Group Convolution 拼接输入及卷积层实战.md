@@ -6,7 +6,7 @@ pytorch转caffe后上板，由于caffe仅支持最高思维input，且板子上�
 # 方法描述
 通过在对pytorch代码(调整nn.conv2d输入通道数以及group参数)以及模型的修改(see below)，实现输入图像在通道上的拼接以及模型输入尺寸的增加。
 
-例：将六个单通道卷积层合并为一个（包括BN，ReLU等），可参考https://blog.csdn.net/u012363389/article/details/105724625和https://blog.csdn.net/qq_34914551/article/details/87871134
+例：将六个单通道卷积层合并为一个（包括BN，ReLU等），可参考https://blog.csdn.net/u012363389/article/details/105724625 和 https://blog.csdn.net/qq_34914551/article/details/87871134
 
 ```python
 # Changes in model file (.pth)
